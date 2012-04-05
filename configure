@@ -4842,8 +4842,7 @@ fi
 enable_win32_dll=yes
 
 case $host in
-*-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-cegcc*)
-  if test -n "$ac_tool_prefix"; then
+*-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-cegcc*) if test -n "$ac_tool_prefix"; then
   # Extract the first word of "${ac_tool_prefix}as", so it can be a program name with args.
 set dummy ${ac_tool_prefix}as; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
@@ -11592,7 +11591,7 @@ $as_echo "#define BEOS 1" >>confdefs.h
 
         ;;
     *mingw*)
-        MMS_LIBS="$MMS_LIBS -lws2_32"
+        MMS_LIBS="$MMS_LIBS -lws2_32 -liconv"
         MMS_CFLAGS="-DWINVER=0x0600 -D_WIN32_WINNT=0x0600"
         ;;
 esac
