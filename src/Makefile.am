@@ -22,7 +22,7 @@ libmms_la_SOURCES = 		\
 # noinst_HEADERS = 
 
 libmms_la_LDFLAGS = -version-info 0:2:0 -no-undefined -export-dynamic
-libmms_la_LIBADD = $(GLIB_LIBS)
+libmms_la_LIBADD = $(GLIB_LIBS) $(MMS_LIBS)
 
 libmmsincdir = $(includedir)/libmms
 
