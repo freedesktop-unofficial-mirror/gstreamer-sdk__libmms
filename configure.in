@@ -20,7 +20,7 @@ case $host in
         AC_DEFINE([BEOS],1,[Define if compiling on BeOS system.])
         ;;
     *mingw*)
-        MMS_LIBS="$MMS_LIBS -lws2_32"
+        MMS_LIBS="$MMS_LIBS -lws2_32 -liconv"
 dnl Needed for getaddrinfo under mingw
         MMS_CFLAGS="-DWINVER=0x0600 -D_WIN32_WINNT=0x0600"
         ;;
