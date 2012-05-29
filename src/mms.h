@@ -22,6 +22,11 @@
  * libmms public header
  */
 
+#ifndef AI_NUMERICSERV
+#define AI_NUMERICSERV 0
+#endif
+
+
 #ifndef HAVE_MMS_H
 #define HAVE_MMS_H
 
